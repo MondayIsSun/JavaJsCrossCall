@@ -74,9 +74,17 @@ public class MainActivity extends Activity {
             Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
         }
 
+//        @JavascriptInterface
+//        public void onSumResult(int num1, int num2) {
+//            int result = num1 + num2;
+//            Log.i(TAG, "onSumResult result=" + result);
+//            Toast.makeText(getApplicationContext(), result, Toast.LENGTH_LONG).show();
+//        }
+
         @JavascriptInterface
         public void onSumResult(int result) {
             Log.i(TAG, "onSumResult result=" + result);
+            Toast.makeText(getApplicationContext(), result + "", Toast.LENGTH_LONG).show();
         }
     }
 
